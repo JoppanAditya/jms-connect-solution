@@ -52,50 +52,57 @@
                     <h2>Order List</h2>
                     <hr class="bottom-line left" />
                 </div>
-                <?php foreach ($orders as $index => $order) : ?>
-                    <div class="order-details">
-                        <button class="order-delete" data-id="<?= $order['id']; ?>"><i class='bx bx-trash'></i></button>
-                        <div class="order-left">
-                            <div class="detail-item">
-                                <h3>Order ID:</h3>
-                                <p><?= $order['id']; ?></p>
-                            </div>
-                            <div class="detail-item">
-                                <h3>Fullname:</h3>
-                                <p><?= $order['fullname']; ?></p>
-                            </div>
-                            <div class="detail-item">
-                                <h3>Business Email:</h3>
-                                <p><?= $order['email']; ?></p>
-                            </div>
-                            <div class="detail-item">
-                                <h3>Company:</h3>
-                                <p><?= $order['company']; ?></p>
-                            </div>
-                        </div>
-                        <div class="detail-right">
-                            <div class="detail-item">
-                                <h3>Phone Number:</h3>
-                                <p><?= $order['phone']; ?></p>
-                            </div>
-                            <div class="detail-item">
-                                <h3>Service:</h3>
-                                <p><?= $order['service']; ?></p>
-                            </div>
-                            <div class="detail-item">
-                                <h3>Message:</h3>
-                                <p><?= $order['message']; ?></p>
-                            </div>
-                            <div class="detail-item">
-                                <h3>Order Date:</h3>
-                                <p><?= date("M d, Y | H:i", $order['date_created']); ?></p>
-                            </div>
-                        </div>
+                <?php if (empty($orders)) : ?>
+                    <div class="no-orders">
+                        <p>Oops, it looks like you haven't ordered anything yet.</p>
+                        <a href="<?= base_url('services'); ?>" class="normal">Order a Service Here</a>
                     </div>
-                    <?php if ($index < count($orders) - 1) : ?>
-                        <hr />
-                    <?php endif; ?>
-                <?php endforeach; ?>
+                <?php else : ?>
+                    <?php foreach ($orders as $index => $order) : ?>
+                        <div class="order-details">
+                            <button class="order-delete" data-id="<?= $order['id']; ?>"><i class='bx bx-trash'></i></button>
+                            <div class="order-left">
+                                <div class="detail-item">
+                                    <h3>Order ID:</h3>
+                                    <p><?= $order['id']; ?></p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Fullname:</h3>
+                                    <p><?= $order['fullname']; ?></p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Business Email:</h3>
+                                    <p><?= $order['email']; ?></p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Company:</h3>
+                                    <p><?= $order['company']; ?></p>
+                                </div>
+                            </div>
+                            <div class="detail-right">
+                                <div class="detail-item">
+                                    <h3>Phone Number:</h3>
+                                    <p><?= $order['phone']; ?></p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Service:</h3>
+                                    <p><?= $order['service']; ?></p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Message:</h3>
+                                    <p><?= $order['message']; ?></p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Order Date:</h3>
+                                    <p><?= date("M d, Y | H:i", $order['date_created']); ?></p>
+                                </div>
+                            </div>
+                        </div>
+                        <?php if ($index < count($orders) - 1) : ?>
+                            <hr />
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>

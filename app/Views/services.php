@@ -90,7 +90,7 @@
             perencanaan strategi IT hingga implementasi dan perawatan infrastruktur, serta dukungan teknis dan pelatihan untuk memastikan pelanggan memiliki sistem yang sesuai dengan kebutuhan bisnis mereka.
           </p>
           <a href="<?= base_url('it-consulting'); ?>" class="read-more">
-            Read more
+            See details
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
@@ -108,7 +108,7 @@
             dan memperbaiki alokasi modal dan biaya operasional. Layanan ini memungkinkan perusahaan untuk mengelola sumber daya IT secara efektif dan memastikan bahwa aplikasi dan data mereka dapat diakses secara aman dan efisien.
           </p>
           <a href="<?= base_url('cloud-solutions'); ?>" class="read-more">
-            Read more
+            See details
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
@@ -126,7 +126,7 @@
             karena serangan siber dapat memiliki konsekuensi yang serius, termasuk kehilangan data dan informasi yang penting, kerusakan pada sistem, dan bahkan kehilangan uang dan reputasi.
           </p>
           <a href="<?= base_url('cyber-security'); ?>" class="read-more">
-            Read more
+            See details
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>

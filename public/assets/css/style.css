@@ -2239,6 +2239,19 @@ form button.disabled:hover{
   color: #efefef;
 }
 
+.no-orders {
+  margin: 32px 0;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.no-orders p {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
 /* Edit Popup */
 .form-popup {
   border-radius: 10px;
